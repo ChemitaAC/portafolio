@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La galleria</title>
+</head>
+<body>
+    <h1 align="center">Tienda de ropa online</h1>
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Información del Cliente</legend>
+            <table align="center" style="width: 50%;">
+                <tr>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><label for="AP">Apellido paterno:</label></td>
+                    <td><label for="AM">Apellido materno:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Nombre" maxlength="12" name="Nombre" id="Nombre"/></td>
+                    <td><input type="text" placeholder="Apellido Paterno" maxlength="12" name="AP" id="AP"/></td>
+                    <td><input type="text" placeholder="Apellido Materno" maxlength="12" name="AM" id="AM"/></td>
+                </tr>
+                <tr>
+                    <td><label for="Usuario">Nombre de usuario:</label></td>
+                    <td><label for="Contraseña">Contraseña:</label></td>
+                    <td><label for=""></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Usuario" maxlength="12" name="Usuario" id="Usuario"/></td>
+                    <td><input type="text" placeholder="Password" maxlength="12" name="Contraseña" id="Contraseña"/></td>
+                    <td></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de facturación</legend>
+            <table align="center" style="width: 50%;">
+                <tr>
+                    <td><label for="Calle">Calle</label></td>
+                    <td><label for="Num">Num</label></td>
+                    <td><label for="Col">Colonia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Calle" maxlength="12" name="Calle" id="Calle"/></td>
+                    <td><input type="text" placeholder="Num Exterior" maxlength="12" name="Num" id="Num"/></td>
+                    <td><input type="text" placeholder="Colonia" maxlength="12" name="Col" id="Col"/></td>
+                </tr>
+                <tr>
+                    <td><label for="E-mail">E-mail:</label></td>
+                    <td><label for="CP">Código Postal:</label></td>
+                    <td><label for="RFC">RFC:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="E-mail" maxlength="12" name="E-mail" id="E-mail"/></td>
+                    <td><input type="text" placeholder="C.P." maxlength="12" name="CP" id="CP"/></td>
+                    <td><input type="text" placeholder="RFC" maxlength="12" name="RFC" id="RFC"/></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Fecha de la venta</label><input type="date" name="date" id="date"/></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de articulo adquirido</legend>
+            <table align="center" style="width: 50%;">
+                <tr>
+                    <td><label for="tipo">Tipo</label></td>
+                    <td><label for="talla">Talla</label></td>
+                    <td><label for="color">Selecciona el color</label><br><input type="color"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="tipo" id="tipo" list="tipos"/>
+            <datalist id="tipos">
+                    <option>Vestido</option>
+                    <option>Falda</option>
+                    <option>Pantalón</option>
+                    <option>Playera</option>
+                    <option>Camisa</option>
+                    <option>Tenis</option>
+                    <option>Zapatos</option>
+            </datalist></td>
+            <td><input type="checkbox" name="chico" id="chico" value="chico"><label for="chico">Chico</label><br><input type="checkbox" name="med" id="med" value="med"><label for="med">Mediano</label><br><input type="checkbox" name="Grande" id="Grande" value="Grande"><label for="Grande">Grande</label></td>
+            <td><input type="submit" name="enviar" id="enviar" value="Enviar Datos"/><input type="reset" name="borrar" id="borrar" value="Borrar Datos"/></td>    
+            </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
