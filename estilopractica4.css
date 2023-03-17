@@ -1,0 +1,30 @@
+#texto1{
+    color: plum;
+    font-size: 120%;
+    font-style: italic;
+}
+#uno{
+    background-color: blanchedalmond;
+}
+
+#texto2{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+#texto3{
+    color: aqua;
+}
+#texto4{
+    color: blue;
+}
+#amado{
+    font-size: 20px;
+    color: plum;
+    font-style: italic;
+}
+#dos{
+    background-color: rgb(188, 228, 178);
+}
+ol{
+    list-style-type: decimal;
+}
