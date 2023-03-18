@@ -1,0 +1,43 @@
+body{
+    background-color: gray;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgray;
+}
+h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
+legend{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bolder;
+}
+table{
+    color: white;
+    font-weight: 20;
+    text-align: left;
+    
+}
+/*.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.checkbox:checked {
+    background-color: rgb(14, 30, 179);
+}
