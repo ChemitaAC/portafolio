@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(78, 211, 255);
+    
+}
+
+.container{
+    margin: 3%;
+}
+h1{
+    font-size: 50px; 
+    font-family: 'Lobster', cursive;
+    color: rgb(78, 78, 216);
+    text-decoration: none;
+}
+* {
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+}
+/*
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 50px;
+    float: left;
+    padding: 10px 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: ;
+    font-weight: bold;
+
+}
+nav a*/
+section{
+    height: 700px;
+    width: 1200px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#uno{
+    background: url(UNO.png); 
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+}
+#dos{
+    background: url(DOS.jpg);
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+}
+#tres{
+    background: url(TRES.jpg) ;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+}
+#cuatro{
+    background: url(CUATRO.jpg) ;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+}
+h4{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 60px;
+    color: black;
+}
+h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px; text-align: baseline;
+    color: black;
+
+}
+nav {
+    height: 50px;
+    background-color: #238cee;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    nav ul {
+    list-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+    }
+    nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    }
+    nav li:last-child {
+    margin-right: 0;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    }
+    nav a:hover {
+    background-color: #929292;
+    }
+#cols{
+    align-content: baseline;
+}
+h6{
+    font-size: 20px;
+}
+#bott{
+    align-content: center;
+    display: flex;
+}

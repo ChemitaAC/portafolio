@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(78, 211, 255);
+}
+
+h1{
+    font-size: 50px; 
+    font-family: 'Lobster', cursive;
+    color: rgb(78, 78, 216);
+    text-decoration: none;
+}
+* {
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 50px;
+    float: left;
+    padding: 10px 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: ;
+    font-weight: bold;
+
+}
+nav a*/
+#uno{
+    background: url(UNO.jpg) ;
+    height: 675px;
+    width: 1200px;
+    margin-right: auto;
+}
+#dos{
+    background: url(DOS.jpg) ;
+    height: 720px;
+    width: 1280px;
+    margin-left: auto;
+}
+#tres{
+    background: url(TRES.jpg) ;
+    height: 675px;
+    width: 1200px;
+    margin-right: auto;
+}
+#cuatro{
+    background: url(CUATRO.jpg) ;
+    height: 704px;
+    width: 1140px;
+    margin-left: auto;
+}
+h4{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 60px;
+    color: blanchedalmond;
+}
+nav {
+    height: 50px;
+    background-color: #238cee;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    nav ul {
+    list-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+    }
+    nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    }
+    nav li:last-child {
+    margin-right: 0;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    }
+    nav a:hover {
+    background-color: #929292;
+    }
+    
