@@ -1,0 +1,40 @@
+#u{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #410101;
+    text-align: center;
+    margin: 15px auto;
+    background: #813910;
+    font-family: 'Abril Fatface', cursive; font-size: 30px;
+}
+
+#u:hover{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #1b8a0c;
+    text-align: center;
+    margin: 15px auto;
+    background: #368f51;
+    -moz-border-radius: 30px 30px 30px 40px;
+    -webkit-border-radius: 30px 30px 30px 40px;
+    border-radius: 30px 30px 30px 40px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+
+#u:active{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #051842;
+    text-align: center;
+    margin: 15px auto;
+    background: #0614d1;
+    -moz-box-shadow: rgb(16, 35, 209) 10px 15px 5px;
+    -webkit-box-shadow: rgb(16, 35, 209) 10px 15px 5px;
+    box-shadow: rgb(16, 35, 209) 10px 15px 5px;
+    font-family: 'Kalam', cursive;
+}
+
