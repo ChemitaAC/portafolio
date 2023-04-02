@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(78, 211, 255);
+    
+}
+nav {
+    height: 50px;
+    background-color: #238cee;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    nav ul {
+    list-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+    }
+    nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    }
+    nav li:last-child {
+    margin-right: 0;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    }
+    nav a:hover {
+    background-color: #929292;
+    }
+.menu{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+}
+
+table{
+        border: 1px solid white;
+    }
+
+.div1:active{
+    display: block;
+    transform: translate(0px, 900px);  
+    transition-duration: 1s;
+}
+/*
+.img1:active{
+    display: absolute;
+    transform: translate(400px, -750px);
+    transition-duration: 1s;
+}
+.img2:active{
+    display: absolute;
+    transform: translate(-50px, -750px);
+    width: 600px;
+    transition-duration: 1s;
+}
+.img3:active{
+    display: absolute;
+    transform: translate(50px, -750px);
+    transition-duration: 1s;
+}
+.img4:active{
+    display: absolute;
+    transform: translate(-400px, -750px);
+    transition-duration: 1s;
+}
+
+.img5:active{
+    display: absolute;
+    transform: translate(400px, -1200px);
+    transition-duration: 1s;
+}
+.img6:active{
+    display: absolute;
+    transform: translate(-50px, -1200px);
+    transition-duration: 1s;
+}
+.img7:active{
+    display: absolute;
+    transform: translate(50px, -1200px);
+    transition-duration: 1s;
+}
+.img8:active{
+    display: absolute;
+    transform: translate(-400px, -1200px);
+    transition-duration: 1s;
+}*/
+.p1{
+    color: rgba(255, 255, 255, 0);
+}
+.p2{
+    color: rgba(255, 255, 255, 0);
+}
+.p3{
+    color: rgba(255, 255, 255, 0);
+}
+.p4{
+    color: rgba(255, 255, 255, 0);
+}
+.p5{
+    color: rgba(255, 255, 255, 0);
+}
+.p6{
+    color: rgba(255, 255, 255, 0);
+}
+.p7{
+    color: rgba(255, 255, 255, 0);
+}
+.p8{
+    color: rgba(255, 255, 255, 0);
+}
+.p1:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(600px, -225px);
+    transition-duration: 1s;
+}
+.d1:active{
+    display: block;
+    transform: translate(400px, -750px);
+    transition-duration: 1s;
+}
+.p2:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(600px, -225px);
+    transition-duration: 1s;
+}
+.d2:active{
+    display: absolute;
+    transform: translate(-50px, -750px);
+    transition-duration: 1s;
+}
+.p3:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(-600px, -225px);
+    transition-duration: 1s;
+}
+.d3:active{
+    display: absolute;
+    transform: translate(50px, -750px);
+    transition-duration: 1s;
+}
+.p4:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(-600px, -225px);
+    transition-duration: 1s;
+}
+.d4:active{
+    display: absolute;
+    transform: translate(-400px, -750px);
+    transition-duration: 1s;
+}
+.p5:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(600px, -225px);
+    transition-duration: 1s;
+}
+.d5:active{
+    display: absolute;
+    transform: translate(400px, -1200px);
+    transition-duration: 1s;
+}
+.p6:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(600px, -225px);
+    transition-duration: 1s;
+}
+.d6:active{
+    display: absolute;
+    transform: translate(-50px, -1200px);
+    transition-duration: 1s;
+}
+.p7:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(-600px, -225px);
+    transition-duration: 1s;
+}
+.d7:active{
+    display: absolute;
+    transform: translate(50px, -1200px);
+    transition-duration: 1s;
+}
+.p8:active{
+    color: rgb(12, 0, 0);
+    display: block;
+    transform: translate(-600px, -225px);
+    transition-duration: 1s;
+}
+.d8:active{
+    display: absolute;
+    transform: translate(-400px, -1200px);
+    transition-duration: 1s;
+}
