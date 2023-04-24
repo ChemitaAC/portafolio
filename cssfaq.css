@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(78, 211, 255);
+    
+}
+nav {
+    height: 50px;
+    background-color: #238cee;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    nav ul {
+    list-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+    }
+    nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    }
+    nav li:last-child {
+    margin-right: 0;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    }
+    nav a:hover {
+    background-color: #929292;
+    }
+.tit{
+    font-size: 50px; 
+    font-family: 'Lobster', cursive;
+    color: rgb(78, 78, 216);
+    text-decoration: none;
+}
+.menu{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
+}
+.intro{
+    font-size: 25px;
+    font-family: 'Lobster Two', italic;
+    color: rgb(3, 3, 54);
+}
+.tit2{
+    font-size: 40px; 
+    font-family: 'Lobster Two';
+    color: rgb(5, 5, 43);
+    text-decoration: none;
+    text-align: center;
+}
+
+.preg{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(1, 1, 26);
+}
+.res{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(1, 8, 32);
+    font-size: 20px;
+}

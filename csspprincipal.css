@@ -1,8 +1,10 @@
-body{
-    background-color: rgb(78, 211, 255);
-    
+.tit{
+    font-size: 50px; 
+    font-family: 'Lobster', cursive;
+    color: rgb(78, 78, 216);
+    text-decoration: none;
+    text-align: center;
 }
-
 .container{
     margin: 3%;
 }
@@ -17,32 +19,44 @@ h1{
     margin: 0;
     box-sizing: border-box;
 }
-.menu{
-    text-align: center;
-    align-items: center;
-    height: fit-content;
+body{
+    background-color: rgb(78, 211, 255);
+    
 }
-/*
-.menu{
-    width: 900px;
-    margin: 0 auto;
-}
-nav{
-    float: right;
-}
-nav ul li{
+nav {
+    height: 50px;
+    background-color: #238cee;
+    color: #000000;
+    margin-bottom: 20px;
+    }
+    nav ul {
     list-style: none;
-    margin-left: 50px;
-    float: left;
-    padding: 10px 0;
-}
-nav ul li a{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+    }
+    nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    }
+    nav li:last-child {
+    margin-right: 0;
+    }
+    nav a {
+    color: #fff;
     text-decoration: none;
-    color: ;
-    font-weight: bold;
-
+    padding: 10px;
+    }
+    nav a:hover {
+    background-color: #929292;
+    }
+.menu{
+        text-align: center;
+        align-items: center;
+        height: fit-content;
 }
-nav a*/
 section{
     height: 700px;
     width: 1200px;
@@ -98,42 +112,14 @@ h5{
     color: black;
 
 }
-nav {
-    height: 50px;
-    background-color: #238cee;
-    color: #000000;
-    margin-bottom: 20px;
-    }
-    nav ul {
-    list-style: none;
-    margin-left: 300px;
-    margin-right: 300px;
-    padding: 5px;
-    }
-    nav li {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 12px;
-    }
-    nav li:last-child {
-    margin-right: 0;
-    }
-    nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    }
-    nav a:hover {
-    background-color: #929292;
-    }
 #cols{
     align-content: baseline;
 }
 h6{
     font-size: 20px;
 }
-#bott{
-    align-content: center;
-    display: flex;
+table{
+    width: 50%;
+    margin-left: 25%;
+    
 }
