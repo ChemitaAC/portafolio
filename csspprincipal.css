@@ -123,5 +123,6 @@ table{
     
 }
 td{
-    padding-left: 50px;
+    text-align: center;
+    align-items: center;
 }
