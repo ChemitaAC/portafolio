@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6
+    </title>
+</head>
+<body>
+    <h1 align="center">API WEB para validación de datos</h1>
+    
+    <p>Esta API se basa principalmente en el uso de dos propiedades las cuales son checkValidity() que sirve para revisar si los valores introducidos son validos, y setCustomValidity(), la cual delimita el rango de validez de un dato.</p>
+    
+    <p>Y por medio de la condicional "if", es que se dara el rango en el que los valores se introduzcan y validen</p>
+
+    <p>Y es por medio de las propiedades de validez como lo son : customError, patternMismatch, rangeOverflow, rangeUnderflow, stepMismatch, tooLong, typeMismatch, valueMissing, valid</p>
+    
+    <p>Esta api se utiliza para la validación de datos, como lo pueden ser datos enteros donde se pide que introduzcas un numero en un rango de valores especificos</p>
+
+    <input id="id1" type="number" min="300">
+    <button onclick="myFunction()">Menor a 300</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+    let text = "El valor del numero es mayor a 300";
+    if (document.getElementById("id1").validity.rangeUnderflow) {
+        text = "El valor es menor a 300, porfavor introduzca un valor mayor";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            align-content: center;
+            color: black;
+            size: 45px;
+        }
+        p{
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            size: 20px;
+        }
+    </style>
+</body>
+</html>
