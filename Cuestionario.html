@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+</head>
+<script>
+var total;
+function califica() //funcion para calificar el cuestionario
+    {var total=0;
+    	for (var x=1;x<6;x++) //cantidad de preguntas admitidas
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom); //aqui se obtiene el valor de la respuesta metida
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value); //aqui se valida el valor de la respuesta
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos"; //aqui se de la puntuacion
+        }
+        if(total==25)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total>=15 && total<=20)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+</script>
+<style>
+    body{
+        background-image: url(7m.jfif); background-size: 100%; <!--en esta parte se define el fondo-->
+		color: rgb(36, 16, 1); 
+		font-size: 1.2rem;
+    }
+	div{
+		width: 400px;
+		height: 600px;
+		background-color: rgba(0, 255, 255, 0.466);
+	}
+</style>
+<body>
+    <div id="contiene">
+	<h1>Las maravillas del mundo Actual</h1>
+	<h2>¿Que tanto conoces?</h2>
+<form>
+<div>
+	
+	<ul>
+
+		<li>¿Donde hay una "torre Eiffel"?</li>
+		<input type="radio" name="r1" id="r1" value="5"/>Durango<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Nuevo Leon<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Saltillo<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Quichua<br/>
+		
+		<li>¿Donde esta la torre de Pisa?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>Genova<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Napoles<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>Pisa<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Milan<br/>
+
+		<li>¿Donde esta el Burj Khalifa?</li>
+		<input type="radio" name="r3" id="r3" value="0"/>Catar<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>Emiratos Arabes<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Kuwait<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Arabia Saudita<br/>
+
+        <li>¿Donde esta la piramide mas grande del mundo?</li>
+		<input type="radio" name="r4" id="r4" value="0"/>Peru<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Camboya<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>Mexico<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Egipto<br/>
+
+		<li>¿Donde se encuentra el Cristo Redentor?</li>
+		<input type="radio" name="r5" id="r5" value="0"/>Brasilia<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Sao Paulo<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Belo Horizonte<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>Rio de Janeiro<br/>
+	</ul>
+	
+</div>
+<input type="button" value="Calificar" onclick="califica()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
