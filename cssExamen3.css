@@ -1,0 +1,31 @@
+
+    h1{
+        margin-left: 15%;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 35px;
+    }
+
+    form{
+        font-family: 'Lobster', cursive;
+    }
+    label{
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+    .nombre{
+        width: 60%;
+        margin-left: 20%;
+        height: 40px;
+    }
+    p{
+        margin-top: 10px;
+        font-family: 'Lobster', cursive;
+        font-size: small;
+    }
+    img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    input{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
