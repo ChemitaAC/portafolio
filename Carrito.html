@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrocinios GymRatShark</title>
+    <link rel="stylesheet" href="carro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,600&family=Lobster&family=Lobster+Two:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="jspdf.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+</head>
+<script>
+function Calcular()
+    {
+        var total=0;
+        var valid=0;
+        var cont=1;
+        
+        do{
+            valid=0;
+            var prod=document.getElementById("r1"+cont);
+            if(prod.checked==true){
+                var prod1=parseInt(prod.value);
+                valid=1;
+            }else
+                cont++;
+        }while(valid!=1);
+
+        var cant=document.getElementById("r2");
+        var cant1=parseInt(cant.value);
+        
+        cont=1;
+        do{
+            valid=0;
+            var met=document.getElementById("r3"+cont);
+            if(met.checked==true){
+                var met1=parseInt(met.value);
+                valid=1;
+                if(met1==1)
+                    document.getElementById("comentario").innerHTML="1234 5678 9100";
+                else
+                    document.getElementById("comentario").innerHTML="No disponible, use otro metodo";
+            }else
+                cont++;
+        }while(valid!=1);
+
+        do{
+            valid=0;
+            var env=document.getElementById("r4"+cont);
+            if(env.checked==true){
+                valid=1;
+                var env1=parseInt(env.value);
+            }else
+            cont++;
+        }while(valid!=1);
+        
+       
+        
+
+        total=prod1*cant1+env1;
+
+            
+            document.getElementById("total").innerHTML="Total a pagar: "+total+" pesos";
+        
+}   
+
+function generar()
+    {
+        //Crear un objeto o instancia jsPDF
+        var doc= new jsPDF();
+        var tot=document.getElementById("total");
+        var com=document.getElementById("comentario");
+        var tot1=tot.innerText;
+        var com1=com.innerText;
+        //Definir tamaño de la letra
+        doc.setFontSize(40);
+        
+        //Color de Texto
+        doc.setTextColor(58, 55, 199);  
+        doc.text(60,20,"Carrito");
+        doc.setTextColor(17,122,209); //Color formato RGB
+        doc.setFontSize(30);
+        doc.text(60,35,"FACTURA"); //Ubicación y texto
+        doc.setTextColor(18,100,123);
+        doc.setFontSize(20);
+        doc.text(60,50,tot1);
+        doc.text(60,70,"Metodo de pago:");
+        doc.text(60,80,"Referencia  "+com1);
+        var string=doc.output('datauristring');
+        $('iframe').attr('src',string);
+    }
+    
+</script>
+<body>
+    <div class="menu">
+        <h1 class="tit"><a href="proyecto.html">GymRatShark</a></h1>
+        <nav>
+            <ul>
+                <li><a href="prodproy.html">Productos</a></li>
+                
+                <li><a href="patroproy.html">Patrocinios</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="blogproy.html">Blog</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contiene" class="cuadro">
+        <h1>Responde el siguiente formulario de acuerdo a lo que te interese</h1>
+    <form>
+            <div class="cuadro2">
+       
+        <ul>
+            <li>¿Cuál de los siguientes productos le interesa comprar?</li>
+            <input type="radio" name="r1" id="r11" value="1049"/>Proteína de suero de leche MuscleTech (23 porciones)<br/>
+            <input type="radio" name="r1" id="r12" value="1749"/>Proteína de suero de leche MuscleTech (69 porciones)<br/>
+            <input type="radio" name="r1" id="r13" value="639"/>BCAA´s BirdMan<br/>
+            <input type="radio" name="r1" id="r14" value="699"/>BCAA´s Mutant<br/>
+            <input type="radio" name="r1" id="r15" value="899"/>BCAA´s Yaoca<br/>
+            <input type="radio" name="r1" id="r16" value="959"/>Amino Energy ON<br/>
+            <input type="radio" name="r1" id="r17" value="1199"/>Preentreno C4 Mutant<br/>
+            <input type="radio" name="r1" id="r18" value="1499"/>Proteína de suero de leche Isopure<br/>
+           
+            <li>¿Cuántos desea comprar?</li>
+            <input type="number" name="r2" id="r2" min="1" max="5"/><br/>
+    
+            <li>¿Cómo desea pagar?</li>
+            <input type="radio" name="r3" id="r31" value="1"/>Transferencia<br/>
+            <input type="radio" name="r3" id="r32" value="2"/>Paypal<br/>
+    
+            <li>Datos de Envío:</li>
+            <input type="radio" name="r4" id="r41" value="0"/>Normal (3 a 5 días) - Gratuito<br/>
+            <input type="radio" name="r4" id="r42" value="100"/>Express (1 a 2 días) - $100.00<br/>
+        </ul>
+
+        <input type="button" value="Calcular" onclick="Calcular()" class="boton" id="botones" style="width: 300px; height: 20px; font-family: sans-serif; margin-left: 100px; color: rgb(116, 209, 173); background-color: rgb(240, 233, 176); font-weight: bolder;">
+        <input type="button" value="Generar PDF" onclick="generar()" class="boton" id="botones" style="width: 300px; height: 20px; font-family: sans-serif; margin-left: 100px; color: rgb(116, 209, 173); background-color: rgb(240, 233, 176); font-weight: bolder;">
+    </div>
+    </form>
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+    <iframe frameborder="0" width="600" height="500">
+    </iframe>
+</body>
+</html>

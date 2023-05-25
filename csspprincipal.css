@@ -4,24 +4,26 @@
     color: rgb(78, 78, 216);
     text-decoration: none;
     text-align: center;
+
 }
 .container{
     margin: 3%;
+    font-family: 'Poppins', sans-serif;
 }
-h1{
+.tit{
     font-size: 50px; 
     font-family: 'Lobster', cursive;
     color: rgb(78, 78, 216);
     text-decoration: none;
 }
 * {
-    padding:  0;
-    margin: 0;
-    box-sizing: border-box;
+    
+    text-decoration: none;
 }
 body{
     background-color: rgb(78, 211, 255);
-    
+    margin: 0px;
+    padding: 0px;
 }
 nav {
     height: 50px;
@@ -56,6 +58,8 @@ nav {
         text-align: center;
         align-items: center;
         height: fit-content;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
 }
 section{
     height: 700px;
@@ -72,6 +76,19 @@ section{
     justify-content: flex-start;
     display: flex;
 }
+
+.blok1{
+    background-color: rgba(82, 146, 175, 0.651);
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+
+.blok2{
+    background-color: rgba(82, 146, 175, 0.651);
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+
 #dos{
     background: url(DOS.jpg);
     margin-left: auto;
@@ -89,16 +106,6 @@ section{
     background-size: cover;
     align-items: flex-end;
     justify-content: flex-end;
-    display: flex;
-}
-#cuatro{
-    background: url(CUATRO.jpg) ;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: right;
-    align-items: flex-end;
-    justify-content: flex-start;
     display: flex;
 }
 h4{
@@ -119,10 +126,10 @@ h6{
     font-size: 20px;
 }
 table{
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     
 }
-td{
-    text-align: center;
-    align-items: center;
+table td{
+    padding-left: 150px;
 }

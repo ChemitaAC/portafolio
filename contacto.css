@@ -1,3 +1,4 @@
+
 *{
     text-decoration: none;
 }
@@ -47,26 +48,34 @@ nav {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: larger;
 }
-.intro{
-    font-size: 25px;
-    font-family: 'Lobster Two', italic;
-    color: rgb(3, 3, 54);
+.xxx{
+    display: absolute;
+    margin-left: 400px;
+    margin-right: 400px;
 }
-.tit2{
-    font-size: 40px; 
-    font-family: 'Lobster Two';
-    color: rgb(5, 5, 43);
-    text-decoration: none;
-    text-align: center;
-    text-decoration: none;
+.emi{
+    display: flexbox;
+    position:absolute;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(26, 26, 78);
+}
+.chem{
+    display: flexbox;
+    position:absolute;
+    text-align: right;
+    right: 20%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(26, 26, 78);
+}
+.imgg img{
+    width: 550px;
+    
 }
 
-.preg{
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(1, 1, 26);
-}
-.res{
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(1, 8, 32);
-    font-size: 20px;
+.imgg{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 35%
 }

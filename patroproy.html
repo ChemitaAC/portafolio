@@ -13,19 +13,61 @@
 </head>
 <body>
     <div class="menu">
-        <h1><a href="proyecto.html">GymRatShark</a></h1>
+        <h1 class="tit"><a href="proyecto.html">GymRatShark</a></h1>
         <nav>
             <ul>
                 <li><a href="prodproy.html">Productos</a></li>
-                <li><a href="promproy.html">Promociones</a></li>
+                
                 <li><a href="patroproy.html">Patrocinios</a></li>
-                <li><a href="#">Carrito</a></li>
+                <li><a href="Carrito.html">Carrito</a></li>
                 <li><a href="blogproy.html">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
-    <h1>Conviertete en atleta GymRatShark</h1>
+    
+    <div class="formulario ">
+        <h1>Conviertete en atleta GymRatShark</h1>
     <h2>¡Solo llena el siguiente formulario y te contactaremos!</h2>
+        <form action="contactophp.php" method="post"" name="contacto" id ="contacto" >
+            Nombre Completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
+            <br>
+            <br>
+            Correo Electrónico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
+            <br>
+            <br>
+            Sexo
+            <br>
+            <br>
+            <input type="radio" name="GrupoOpciones1" value="1"id="GrupoOpciones1_0" />
+            Hombre
+            <br>
+            <input type="radio" name="GrupoOpciones1" value="2"id="GrupoOpciones1_1"/> Mujer
+            <br>
+            <br>
+            ¿Qué deporte practica?
+            <br>
+            <textarea cols="50" rows="5" name="comentarios"></textarea>
+            <br>
+            <br>
+            ¿En dónde practica su deporte?
+            <br>
+            <textarea cols="50" rows="5" name="comentarios"></textarea>
+            <br>
+            <br>
+            ¿Has competido a nivel estatal o nacional?
+            <br>
+            <textarea cols="50" rows="5" name="comentarios"></textarea>
+            <br>
+            <br>
+            ¿Por qué crees que deberíamos patrocinarte?
+            <br>
+            <textarea cols="50" rows="5" name="comentarios"></textarea>
+            <br>
+            <br>
+            <input type="button" value="Enviar" class="boton" id="botones">
+        </form>
+        
+    </div>
 </body>
 </html>

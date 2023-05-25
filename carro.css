@@ -47,26 +47,43 @@ nav {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: larger;
 }
-.intro{
-    font-size: 25px;
-    font-family: 'Lobster Two', italic;
-    color: rgb(3, 3, 54);
+
+.cuadro{
+    background-color: rgba(26, 35, 83, 0.808);
+    border-radius: 15px;
+    width: 800px;
+    margin-left: 500px;
+    margin-top: 25px;
 }
-.tit2{
-    font-size: 40px; 
-    font-family: 'Lobster Two';
-    color: rgb(5, 5, 43);
-    text-decoration: none;
-    text-align: center;
-    text-decoration: none;
+.cuadro h1{
+    font-family: sans-serif;
+    color: rgb(36, 117, 90);
+    font-size:25px;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+.cuadro h2{
+    font-family: sans-serif;
+    color: rgb(36, 117, 90);
+    font-size:20px;
+    padding-left: 110px;
+    padding-top: 15px;
+}
+.cuadro li{
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(96, 146, 80);
 }
 
-.preg{
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(1, 1, 26);
+.cuadro #botones{
+    margin-top: 10px;
+    font-family: sans-serif;
+    width: 600px;
+
 }
-.res{
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(1, 8, 32);
-    font-size: 20px;
+
+form{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
 }
